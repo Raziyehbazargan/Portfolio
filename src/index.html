@@ -6,6 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+    <title>Raziyeh Bazargan</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,400italic,600,300italic,300|Oswald:400,300,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/nameLogo.png">
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -19,7 +30,86 @@
     </script>
   </head>
 
-  <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+  <body data-spy="scroll" data-target=".main-nav">
+  		<header class="st-navbar">
+  			<nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
+  				<div class="container">
+  					<div class="navbar-header">
+  						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sept-main-nav">
+  							<span class="sr-only">Toggle navigation</span>
+  							<span class="icon-bar"></span>
+  							<span class="icon-bar"></span>
+  							<span class="icon-bar"></span>
+  						</button>
+  					</div>
+
+  					<div class="collapse navbar-collapse main-nav" id="sept-main-nav">
+  						<ul class="nav navbar-nav navbar-left">
+  							<li class="active"><a href="#home">Home</a></li>
+  							<li><a href="#about">About Me</a></li>
+  							<li><a href="#projects">Projects</a></li>
+  							<li><a href="files/Raziyeh_bazargan_CV.pdf" target="_blank">Download Resume</a></li>
+  							<li><a href="#contact">Contact</a></li>
+  						</ul>
+  						<ul class="nav navbar-nav navbar-right">
+  							<li>
+  								<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/raziyehbazargan" target="_blank">
+  								<span class="fa fa-linkedin fa-2x"></span>
+  								</a>
+  							</li>
+  							<li>
+  								<a class="btn btn-social-icon btn-github" href="https://github.com/Raziyehbazargan" target="_blank">
+  									<span class="fa fa-github fa-2x"></span>
+  								</a>
+  							</li>
+  							<li>
+  								<a class="btn btn-social-icon btn-google" href="mailto:R.bazargan@gmail.com" target="_blank">
+  									<span class="fa fa-google fa-2x"></span>
+  								</a>
+  							</li>
+  						</ul>
+  					</div>
+  				</div>
+  			</nav>
+  		</header>
+
+    <!-- Top header -->
+  		<section class="home" id="home" data-stellar-background-ratio="0.4">
+  			<div class="container">
+  	      <home></home>
+  			</div>
+  		</section>
+
+  		<section class="faq-sec" id="projects">
+  			<projects></projects>
+  		</section>
+
+  		<section class="testimonials about" id="about">
+  		  <bio></bio>
+  	  </section>
+  		<section id="skills">
+  	    <skills></skills>
+  		</section>
+
+  	 	<section class="contact" id="contact" style="background:#222;">
+  			<div class="container-fluid">
+  				<contact></contact>
+  			</div>
+  		</section>
+      <my-app>Loading AppComponent content here ...</my-app>
+
+
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js"></script>
+  		<script src="https://demo.cantothemes.com/html/sept/js/jquery.shuffle.modernizr.js"></script>
+  		<script src="https://demo.cantothemes.com/html/sept/js/jquery.shuffle.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
+  		<script src="scripts.js"></script>
   </body>
 </html>
